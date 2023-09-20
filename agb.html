@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <head>
+        <meta charset="utf-8">
+        <meta name="x-apple-disable-message-reformatting">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="format-detection" content="telephone=no, date=no, address=no, email=no, url=no">
+        <meta name="color-scheme" content="light dark">
+        <meta name="supported-color-schemes" content="light dark">
+    <title>Wideruff</title>
+    <style>
+    @keyframes pulse {
+      50% {
+        opacity: .5 !important
+      }
+    }
+    .gap-x-9 {
+      column-gap: 36px
+    }
+    .space-x-3 > :not([hidden]) ~ :not([hidden]) {
+      --tw-space-x-reverse: 0;
+      margin-right: calc(12px * var(--tw-space-x-reverse));
+      margin-left: calc(12px * calc(1 - var(--tw-space-x-reverse)))
+    }
+    @keyframes pulse {
+      50% {
+        opacity: .5 !important
+      }
+    }
+    .hover-animate-pulse:hover {
+      animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite !important
+    }
+    .hover-text-gray-500:hover {
+      color: #6b7280 !important
+    }
+    .focus-ring-0:focus {
+      --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color) !important;
+      --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(0px + var(--tw-ring-offset-width)) var(--tw-ring-color) !important;
+      box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000) !important
+    }
+    .focus-ring-transparent:focus {
+      --tw-ring-color: transparent !important
+    }
+    @media (min-width: 640px) {
+      .sm-px-0 {
+        padding-left: 0 !important;
+        padding-right: 0 !important
+      }
+    }
+    @media (min-width: 768px) {
+      .md--top-2 {
+        top: -8px !important
+      }
+      .md-order-2 {
+        order: 2 !important
+      }
+      .md-mx-5 {
+        margin-left: 20px !important;
+        margin-right: 20px !important
+      }
+      .md-my-0 {
+        margin-top: 0 !important;
+        margin-bottom: 0 !important
+      }
+      .md-mt-0 {
+        margin-top: 0 !important
+      }
+      .md-flex {
+        display: flex !important
+      }
+      .md-h-300px {
+        height: 300px !important
+      }
+      .md-h-87pc {
+        height: 87% !important
+      }
+     
+      .md-w-1-3 {
+        width: 33.333333% !important
+      }
+      .md-w-11-12 {
+        width: 91.666667% !important
+      }
+      .md-w-24 {
+        width: 96px !important
+      }
+      .md-w-4-5 {
+        width: 80% !important
+      }
+      .md-w-300px {
+        width: 300px !important
+      }
+      .md-w-350px {
+        width: 350px !important
+      }
+      .md-w-42pc {
+        width: 42% !important
+      }
+      .md-w-75pc {
+        width: 75% !important
+      }
+      .md-w-87pc {
+        width: 87% !important
+      }
+      .md-flex-row {
+        flex-direction: row !important
+      }
+      .md-items-center {
+        align-items: center !important
+      }
+      .md-justify-center {
+        justify-content: center !important
+      }
+      .md-pb-24{
+        padding-bottom: 6rem !important
+
+      }
+      .md-px-10 {
+        padding-left: 40px !important;
+        padding-right: 40px !important
+      }
+      .md-px-11 {
+        padding-left: 44px !important;
+        padding-right: 44px !important
+      }
+      .md-px-12 {
+        padding-left: 48px !important;
+        padding-right: 48px !important
+      }
+      .md-px-20 {
+        padding-left: 80px !important;
+        padding-right: 80px !important
+      }
+      .md-px-5 {
+        padding-left: 20px !important;
+        padding-right: 20px !important
+      }
+      .md-px-13_5px {
+        padding-left: 13.5px !important;
+        padding-right: 13.5px !important
+      }
+      .md-py-4_5px {
+        padding-top: 4.5px !important;
+        padding-bottom: 4.5px !important
+      }
+      .md-pr-5 {
+        padding-right: 20px !important
+      }
+      .md-text-12px {
+        font-size: 12px !important
+      }
+      .md-text-14px {
+        font-size: 14px !important
+      }
+      .md-text-16px {
+        font-size: 16px !important
+      }
+      .md-text-18px {
+        font-size: 18px !important
+      }
+      .md-text-19px {
+        font-size: 19px !important
+      }
+      .md-text-21px {
+        font-size: 21px !important
+      }
+      .md-text-25px {
+        font-size: 25px !important
+      }
+      .md-text-30px {
+        font-size: 30px !important
+      }
+      .md-text-35px {
+        font-size: 35px !important
+      }
+      .md-text-50px {
+        font-size: 50px !important
+      }
+      .md-leading-32px {
+        line-height: 32px !important
+      }
+      .md-mb-16{
+        margin-bottom: 4rem;
+      }
+    }
+    @media (min-width: 1024px) {
+      .lg-relative {
+        position: relative !important
+      }
+      .lg-m-auto {
+        margin: auto !important
+      }
+      .lg-my-0 {
+        margin-top: 0 !important;
+        margin-bottom: 0 !important
+      }
+      .lg-mb-0 {
+        margin-bottom: 0 !important
+      }
+      .lg-ml-15pc {
+        margin-left: 15% !important
+      }
+      .lg-ml-30pc {
+        margin-left: 30% !important
+      }
+      .lg-ml-45pc {
+        margin-left: 45% !important
+      }
+      .lg-flex {
+        display: flex !important
+      }
+      .lg-table {
+        display: table !important
+      }
+      .lg-h-full {
+        height: 100vh !important
+      }
+      .lg-w-1-2 {
+        width: 50% !important
+      }
+      .lg-w-3-4 {
+        width: 75% !important
+      }
+      .lg-w-3-5 {
+        width: 60% !important
+      }
+    
+
+      .lg-w-4-5 {
+        width: 80% !important
+      }
+      .lg-w-5-6 {
+        width: 83.333333% !important
+      }
+      .lg-w-6-12 {
+        width: 50% !important
+      }
+      .lg-w-7-12 {
+        width: 58.333333% !important
+      }
+      .lg-w-1000px {
+        width: 1000px !important
+      }
+      .lg-w-300px {
+        width: 300px !important
+      }
+      .lg-w-5-12{
+        width: 41.666667% !important
+      }
+      .lg-w-full {
+        width: 100% !important
+      }
+      .lg-w-screen {
+        width: 100vw !important
+      }
+      .lg-grid-cols-2 {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important
+      }
+      .lg-flex-row {
+        flex-direction: row !important
+      }
+      .lg-items-start {
+        align-items: flex-start !important
+      }
+      .lg-items-center {
+        align-items: center !important
+      }
+      .lg-justify-center {
+        justify-content: center !important
+      }
+      .lg-gap-10 {
+        gap: 40px !important
+      }
+      .lg-gap-20 {
+        gap: 80px !important
+      }
+      .lg-p-10 {
+        padding: 40px !important
+      }
+      .lg-p-2 {
+        padding: 8px !important
+      }
+      .lg-px-0 {
+        padding-left: 0 !important;
+        padding-right: 0 !important
+      }
+      .lg-px-10 {
+        padding-left: 40px !important;
+        padding-right: 40px !important
+      }
+      .lg-px-14 {
+        padding-left: 56px !important;
+        padding-right: 56px !important
+      }
+      .lg-px-18px {
+        padding-left: 18px !important;
+        padding-right: 18px !important
+      }
+      .lg-py-6px {
+        padding-top: 6px !important;
+        padding-bottom: 6px !important
+      }
+      .lg-pl-14 {
+        padding-left: 56px !important
+      }
+      .lg-pt-3 {
+        padding-top: 12px !important
+      }
+      .lg-text-left {
+        text-align: left !important
+      }
+      .lg-text-12px {
+        font-size: 12px !important
+      }
+      .lg-text-15px {
+        font-size: 15px !important
+      }
+      .lg-text-16px {
+        font-size: 16px !important
+      }
+      .lg-text-18px {
+        font-size: 18px !important
+      }
+      .lg-text-19px {
+        font-size: 19px !important
+      }
+      .lg-text-21px {
+        font-size: 21px !important
+      }
+      .lg-text-22px {
+        font-size: 22px !important
+      }
+      .lg-text-26px {
+        font-size: 26px !important
+      }
+      .lg-text-32px {
+        font-size: 32px !important
+      }
+      .lg-text-50px {
+        font-size: 50px !important
+      }
+      .lg-leading-32px {
+        line-height: 32px !important
+      }
+    }
+    @media (min-width: 1280px) {
+      .xl-mb-4 {
+        margin-bottom: 16px !important
+      }
+      .xl-h-full{
+        height: 100%;
+      }
+      .xl-h-14 {
+        height: 56px !important
+      }
+      .xl-h-16 {
+        height: 64px !important
+      }
+      .xl-h-20 {
+        height: 80px !important
+      }
+      .xl-w-2-5{
+        width:40% !important
+      }
+      .xl-w-5-12 {
+        width: 41.666667% !important
+      }
+      .xl-w-7-12{
+        width: 60% !important
+      }
+      .xl-w-5-6 {
+        width: 83.333333% !important
+      }
+      .xl-w-1100px {
+        width: 1100px !important
+      }
+      .xl-w-350px {
+        width: 350px !important
+      }
+      .xl-px-10 {
+        padding-left: 40px !important;
+        padding-right: 40px !important
+      }
+      .xl-px-22_5px {
+        padding-left: 22.5px !important;
+        padding-right: 22.5px !important
+      }
+      .xl-py-7_5px {
+        padding-top: 7.5px !important;
+        padding-bottom: 7.5px !important
+      }
+      .xl-text-15px {
+        font-size: 15px !important
+      }
+      .xl-text-16px {
+        font-size: 16px !important
+      }
+      .xl-text-18px {
+        font-size: 18px !important
+      }
+      .xl-text-19px {
+        font-size: 19px !important
+      }
+      .xl-text-24px {
+        font-size: 24px !important
+      }
+      .xl-text-25px {
+        font-size: 25px !important
+      }
+      .xl-text-28px {
+        font-size: 28px !important
+      }
+      .xl-text-38px {
+        font-size: 38px !important
+      }
+      .xl-text-57px {
+        font-size: 57px !important
+      }
+      .xl-text-70px {
+        font-size: 70px !important
+      }
+      .xl-leading-35px {
+        line-height: 35px !important
+      }
+    }
+    @media (min-width: 1536px) {
+      .\32xl-mt-10 {
+        margin-top: 40px !important
+      }
+      .\32xl-h-16 {
+        height: 64px !important
+      }
+      .\32xl-w-1300px {
+        width: 1300px !important
+      }
+      .\32xl-w-450px {
+        width: 450px !important
+      }
+      .\32xl-w-70pc {
+        width: 70% !important
+      }
+      .\32xl-px-20 {
+        padding-left: 80px !important;
+        padding-right: 80px !important
+      }
+      .\32xl-px-27px {
+        padding-left: 27px !important;
+        padding-right: 27px !important
+      }
+      .\32xl-py-10 {
+        padding-top: 40px !important;
+        padding-bottom: 40px !important
+      }
+      .\32xl-py-9px {
+        padding-top: 9px !important;
+        padding-bottom: 9px !important
+      }
+      .\32xl-text-17px {
+        font-size: 17px !important
+      }
+      .\32xl-text-18px {
+        font-size: 18px !important
+      }
+      .\32xl-text-19px {
+        font-size: 19px !important
+      }
+      .\32xl-text-21px {
+        font-size: 21px !important
+      }
+      .\32xl-text-23px {
+        font-size: 23px !important
+      }
+      .\32xl-text-30px {
+        font-size: 30px !important
+      }
+      .\32xl-text-32px {
+        font-size: 32px !important
+      }
+      .\32xl-text-45px {
+        font-size: 45px !important
+      }
+      .\32xl-text-64px {
+        font-size: 64px !important
+      }
+      .\32xl-leading-45px {
+        line-height: 45px !important
+      }
+    }
+    @media (min-width: 1900px) {
+      .\33xl-w-1500px {
+        width: 1500px !important
+      }
+      .\33xl-w-500px {
+        width: 500px !important
+      }
+      .\33xl-px-33px {
+        padding-left: 33px !important;
+        padding-right: 33px !important
+      }
+      .\33xl-py-11px {
+        padding-top: 11px !important;
+        padding-bottom: 11px !important
+      }
+      .\33xl-text-20px {
+        font-size: 20px !important
+      }
+      .\33xl-text-22px {
+        font-size: 22px !important
+      }
+      .\33xl-text-24px {
+        font-size: 24px !important
+      }
+      .\33xl-text-27px {
+        font-size: 27px !important
+      }
+      .\33xl-text-28px {
+        font-size: 28px !important
+      }
+      .\33xl-text-30px {
+        font-size: 30px !important
+      }
+      .\33xl-text-37px {
+        font-size: 37px !important
+      }
+      .\33xl-text-40px {
+        font-size: 40px !important
+      }
+      .\33xl-text-45px {
+        font-size: 45px !important
+      }
+      .\33xl-text-56px {
+        font-size: 56px !important
+      }
+      .\33xl-text-80px {
+        font-size: 80px !important
+      }
+      .\33xl-leading-45px {
+        line-height: 45px !important
+      }
+      .\33xl-leading-50px {
+        line-height: 50px !important
+      }
+    }
+    body{
+        font-family: 'Lato',sans-serif;
+    }
+   
+  </style>
+</head>
+<body style="margin: 0; width: 100%; background-color: #fff; padding: 0; -webkit-font-smoothing: antialiased; word-break: break-word;overflow-x: hidden;">
+   <div  style="width:100vw; background-color:#F7F7F7; overflow-x: hidden;">
+
+    <div class="lg-h-full" style="background-color: #222B36; display: flex; justify-content: center; align-items: center; height: 300px;">
+        <div class=" bg-[url(images/background.png)] bg-center bg-cover w-10-12 md:w-11-12 mx-auto md-mb-16 h-[150px] md:h-[225px] rounded-lg text-center flex items-center" style="background-image:url(images/background.png) ; background-position: center; width:83%; height:255px;background-size: cover; border-radius: 0.5rem; text-align: center; display: flex;justify-content: center; align-items: center; margin-bottom: 1rem; text-align: center;">   
+            <p class="md-text-30px lg-text-50px xl-text-50px  sm-w-3-5 xl-w-7-12" style="color: white;font-weight: 700; width: 80%; font-size: 20px; "> 
+                Allgemeine Nutzungsbedingungen
+            </p>
+        </div>
+    </div>
+
+    <div class=" md-pb-24 md-w-1-3 lg-w-5-12 m-auto text-[#505050] md-text-18px xl-text-19px leading-[25px] 2xl:leading-[30px]" style="padding-top: 2.5rem; padding-bottom: 2.5rem; width:75%; margin: auto; color:505050; font-size: 20px;color:#505050;font-size: 14px;">
+    
+        <!-- Widerrufsrecht -->
+        <div class="section">
+            <span>§ 1 Allgemeines:</span>
+
+            <p class="sub-section after-title">Wir (im Folgenden: dagmar) sind die</p>
+
+            <p class="sub-section">
+                dagmarverse UG <br>
+                Jülicher Straße 72A <br>
+                52070 Aachen <br>
+                Tel.: +49 15788382475 <br>
+                E-Mail: hello@dagmarverse.de
+            </p>
+
+            <p class="sub-section">Geschäftsführer:innen: Sonya Willsch, Camilla Agusti Cordano und Achim Stollenwerk</p>
+
+            <p>
+                Wir betreiben die Internet-Plattform <a href="https://www.dagmarverse.de" target="_blank">www.dagmarverse.de</a>. Die nachfolgenden Bedingungen gelten für die Vertragsbeziehung zwischen dagmar und den auf unserer Plattform registrierten Mitgliedern (im Folgenden: Mitglied).
+            </p>
+
+            <p>
+                Unsere Bedingungen gelten ausschließlich. Entgegenstehende oder von diesen Nutzungsbedingungen abweichende Bedingungen werden nicht anerkannt, es sei denn, dagmar hat ausdrücklich deren Geltung in Textform akzeptiert. 
+            </p>
+        </div>
+
+        <!-- § 2 Vertragsschluss: -->
+        <div class="section">
+            <span>§ 2 Vertragsschluss:</span>
+
+            <p class="after-title sub-section">
+                1. Wenn du dich für eine Mitgliedschaft bei dagmar entscheidest, erhältst du Zugang zu unserer Plattform und damit den Zugriff auf alle von uns bereitgestellte Informationen rund um Finanzen, Versicherungen und Lifestyle. Du kannst unseren E-Learning-Bereich nutzen, an Masterclasses teilnehmen oder dich mit Expert:innen und anderen Mitgliedern austauschen. Bei allen Inhalten von dagmar handelt es sich um Informationen allgemeiner Art. Unsere Inhalte und Dienste sollen eine Hilfestellung bieten, jedoch keine Beratung im Einzelfall zu konkreten Produkten ersetzen. 
+            </p>
+
+            <p class="sub-section">
+                Bitte beachte, dass wir weder den Abschluss von Versicherungsprodukten noch deren Vermittlung anbieten. Wir bieten auch keine Beratung zu konkreten Versicherungsprodukten an. Wir sind keine Versicherungsmakler oder Versicherungsvermittler.
+            </p>
+
+            <p>
+                2. Um Mitglied zu werden, musst du dich zunächst auf unserer Plattform registrieren, indem du ein Mitglieds-Konto erstellst und dich mit unseren Nutzungsbedingungen einverstanden erklärst. Durch Betätigen der Schaltfläche „Account erstellen“ gibt das Mitglied ein verbindliches Angebot auf Abschluss eines Nutzungsvertrages ab. Dagmar nimmt das Angebot durch Zusendung einer Registrierungsbestätigung per E-Mail an. Mit abgeschlossener Registrierung kommt ein verbindlicher Nutzungsvertrag zwischen dem Mitglied und dagmar zustande. 
+                Wir bieten unsere Dienste nur volljährigen Mitgliedern und minderjährigen Mitgliedern ausschließlich mit Einverständniserklärung ihrer Erziehungsberechtigten an.
+            </p>
+
+            <p>
+                3. Als Mitglied verpflichtest du dich im Rahmen der Registrierung nur wahrheitsgemäße Angaben zu deiner Person und ggf. Unternehmen zu machen und deine Daten stets aktuell zu halten.  
+            </p>
+
+            <p>
+                4. Für die Nutzung und Abwicklung der angebotenen Dienste ist es dagmar gestattet, bestimmte personenbezogene Daten des Mitglieds zu erheben, zu speichern, zu verarbeiten und zu verwenden. Der Umgang mit den Daten des Mitglieds erfolgt nach Maßgabe der gesetzlichen Bestimmungen. Nähe Informationen hierzu findest du in unserer Datenschutzerklärung unter: 
+                <a href={privacyPolicy_url} target="_blank">{privacyPolicy_url}</a>
+            </p>
+        </div>
+
+        <!-- § 3 Bereitstellung der Plattform: -->
+        <div class="section">
+            <span>§ 3 Bereitstellung der Plattform:</span>
+            <p class="after-title">
+                1. dagmar stellt die Plattform <a href="https://www.dagmarverse.de" target="_blank">www.dagmarverse.de</a> zur Inanspruchnahme der dortigen Inhalte bereit. <br>
+                2. dagmar übernimmt keine Gewähr für die Verfügbarkeit und Erreichbarkeit der Plattform im Einzelfall. Das Mitglied ist selbst für die Erfüllung der technischen Voraussetzungen (z.B. Internetzugang mit ausreichender Bandbreite) zur Ermöglichung des Zugangs zur Plattform von dagmar über das Internet verantwortlich. <br>
+                3. dagmar ist berechtigt, den Funktionsumfang der Plattform jederzeit ohne vorherige Mitteilung zu erweitern, technisch anzupassen und zu verändern oder in angemessener Weise einzuschränken, sofern dies für das Mitglied zumutbar ist. 
+            </p>
+        </div>
+
+        <!-- § 4 Mitgliedschaft, Dauer und Kosten: -->
+        <div class="section">
+            <span>§ 4 Mitgliedschaft, Dauer und Kosten:</span>
+
+            <p class="after-title">
+                1. Sofern die Registrierung als Mitglied über einen Gutscheincode erfolgt, ist die Mitgliedschaft für die Dauer des bei Registrierung angegebenen Geltungszeitraumes kostenfrei und endet nach Ablauf des Geltungszeitraumes automatisch, sofern das Mitglied nicht die Verlängerung und Umwandlung in eine kostenpflichtige Mitgliedschaft wünscht.
+            </p>
+
+            <p>
+                2. Erfolgt die Registrierung ohne Berücksichtigung eines Gutscheincodes, ist die Mitgliedschaft kostenpflichtig. Das Mitglied ist verpflichtet, die bei Registrierung angezeigten monatlichen/jährlichen Kosten für die jeweilige Dauer der Mitgliedschaft zu zahlen. Die Mindestvertragslaufzeit einer Mitgliedschaft beträgt 12 Monate.
+            </p>
+
+            <p>
+                3. Die auf der Plattform von dagmar konkret angebotenen Dienste (z.B. Masterclasses) werden den Mitgliedern überwiegend kostenlos, teils kostenpflichtig zur Verfügung gestellt. Kostenpflichtige Angebote sind als solche deutlich gekennzeichnet und können jeweils einzeln vom Mitglied kostenpflichtig hinzugebucht werden. 
+            </p>
+
+            <p>
+                4. Alle Preise, für kostenpflichtige Leistungen auf der Plattform von dagmar, verstehen sich einschließlich der jeweils gültigen gesetzlichen Umsatzsteuer. 
+            </p>
+        </div>
+
+        <!-- § 5 Verwendung der Inhalte von dagmar: -->
+        <div class="section">
+            <span>§ 5 Verwendung der Inhalte von dagmar:</span>
+
+            <p class="after-title">
+                Die auf der Plattform von dagmar bereitgestellten Inhalte dürfen nur von registrierten Mitgliedern und ausschließlich zu eigenen Zwecken vertragsgemäß verwendet werden. Eine Weitergabe an Dritte ist untersagt, sofern dagmar nicht ausdrücklich eine Zustimmung in Textform erteilt. Soweit Inhalte zum Download bereitgestellt werden, erfolgt damit keinerlei Übertragung von Urheberrechten. 
+            </p>
+        </div>
+
+        <!-- § 6 Widerrufsrecht: -->
+        <div class="section">
+            <span>§ 6 Widerrufsrecht:</span>
+
+            <p class="after-title">
+                Sofern es sich bei dem Mitglied um einen Verbraucher handelt, das Mitglied also den Nutzungsvertrag mit dagmar zu privaten Zwecken abgeschlossen hat, steht dem Mitglied ein Widerrufsrecht nach den gesetzlichen Bestimmungen zu. Näheres hierzu findest du in unserer Widerrufsbelehrung unter 
+                <a href={widerruf_url} target="_blank">{widerruf_url}</a>
+            </p>
+        </div>
+
+        <!-- § 7 Rechte und Pflichten des Mitgliedes: -->
+        <div class="section">
+            <span>§ 7 Rechte und Pflichten des Mitgliedes:</span>
+
+            <p class="after-title">
+                1. Das Mitglied vergibt sich bei Registrierung Zugangsdaten (Nutzername und Kennwort) zur Nutzung der Plattenform von dagmar. Das Mitglied ist verpflichtet, diese Zugangsdaten geheim zu halten. Dem Mitglied ist es nicht gestattet, Zugangsdaten Dritten zur Verfügung zu stellen oder eigene Zugangsdaten zu nutzen, um Information über Inhalte der Plattform für Dritte zu beschaffen. Dagmar ist berechtigt im Falle eines Verstoßes die Mitgliedschaft außerordentlich fristlos zu kündigen.
+            </p>
+
+            <p>
+                2. Dagmar bietet auf ihrer Plattform ihren Mitgliedern die Möglichkeit sich mit anderen Mitgliedern auszutauschen. Für die eigenen Äußerungen und Darstellungen sowie den Schutz der eigenen Daten, ist dabei jedes Mitglied selbst verantwortlich. Beleidigende oder diskriminierende Äußerungen werden von dagmar nicht geduldet. Dagmar ist berechtigt im Falle eines Verstoßes nach einmaliger Anmahnung die Mitgliedschaft im Wiederholungsfall außerordentlich fristlos zu kündigen.
+            </p>
+        </div>
+
+        <!-- § 8 Kündigung: -->
+        <div class="section">
+            <span>§ 8 Kündigung:</span>
+
+            <p class="after-title sub-section">
+                1. Wurde eine Mindestvertragslaufzeit vereinbart, verlängert sich der Vertrag nach Ablauf der Mindestvertragslaufzeit auf unbestimmte Zeit, wenn er nicht von einer der Parteien mit einer Frist von vier Wochen zum Ablauf der Mindestvertragslaufzeit gekündigt wird. 
+            </p>
+
+            <p class="sub-section">
+                2. Die automatisch auf unbestimmte Zeit verlängerte Mitgliedschaft kann von beiden Seiten ohne Angabe von Gründen jederzeit mit einer Frist von vier Wochen gekündigt werden.
+            </p>
+
+            <p class="sub-section">
+                3. Das Recht zur außerordentlichen Kündigung aus wichtigem Grund ist hiervon ausgenommen und kann jederzeit von beiden Parteien erklärt werden. 
+            </p>
+        </div>
+
+        <!-- § 9 Haftung: -->
+        <div class="section">
+            <span>§ 9 Haftung:</span>
+
+            <p class="after-title">
+                1. Ansprüche des Mitglieds auf Schadensersatz sind ausgeschlossen. Hiervon ausgenommen sind Schadensersatzansprüche des Mitglieds aus der Verletzung des Lebens, des Körpers, der Gesundheit oder aus der Verletzung wesentlicher Vertragspflichten (Kardinalpflichten) sowie die Haftung für sonstige Schäden, die auf einer vorsätzlichen oder grob fahrlässigen Pflichtverletzung von dagmar, ihrer gesetzlichen Vertreter oder Erfüllungsgehilfen beruhen. Wesentliche Vertragspflichten sind solche, deren Erfüllung zur Erreichung des Ziels des Vertrags notwendig ist.
+            </p>
+
+            <p>
+                2. Bei der Verletzung wesentlicher Vertragspflichten haftet dagmar nur auf den vertragstypischen, vorhersehbaren Schaden, wenn dieser einfach fahrlässig verursacht wurde, es sei denn, es handelt sich um Schadensersatzansprüche des Mitglieds aus einer Verletzung des Lebens, des Körpers oder der Gesundheit.
+            </p>
+
+            <p>
+                3. Die Einschränkungen der Ziffern 1 und 2 gelten auch zugunsten der gesetzlichen Vertreter und Erfüllungsgehilfen von dagmar, wenn Ansprüche direkt gegen diese geltend gemacht werden.
+            </p>
+
+            <p>
+                4. Die sich aus Ziffern 1 und 2 ergebenden Haftungsbeschränkungen gelten nicht, soweit dagmar einen Mangel arglistig verschwiegen oder eine Garantie für die Beschaffenheit übernommen hat. Das gleiche gilt, soweit dagmar und das Mitglied eine Vereinbarung über eine Beschaffenheit einer Sache getroffen haben. Die Vorschriften des Produkthaftungsgesetzes bleiben unberührt.
+            </p>
+        </div>
+
+        <!-- § 10 Streitschlichtung: -->
+        <div class="section">
+            <span>§ 10 Streitschlichtung:</span>
+
+            <p class="after-title">
+                Die EU-Kommission hat eine Plattform zur online-Streitbeilegung bereitgestellt. Diese Plattform ist unter folgendem Link erreichbar: 
+                <a href="http://ec.europa.eu/consumers/odr/" target="_blank">http://ec.europa.eu/consumers/odr/</a> <br>
+                Dagmar ist weder bereit noch verpflichtet, an Streitbeilegungsverfahren für eine Verbraucherschlichtungsstelle teilzunehmen.
+            </p>
+        </div>
+
+        <!-- § 11 Schlussbestimmungen: -->
+        <div class="section">
+            <span>§ 11 Schlussbestimmungen:</span>
+
+            <p class="after-title">
+                1. Es gilt das Recht der Bundesrepublik Deutschland. Die Bestimmungen des UN-Kaufrechts finden keine Anwendung. Bei Verbrauchern gilt diese Rechtswahl nur insoweit, als sich der gewährte Schutz durch zwingende Bestimmungen des Rechts des Staates, in dem der Verbraucher seinen gewöhnlichen Aufenthalt hat, entzogen wird.
+            </p>
+
+            <p>
+                2. Ist Mitglied Kaufmann, juristische Person des öffentlichen Rechts oder öffentlich-rechtliches Sondervermögen, ist ausschließlicher Gerichtsstand für alle Streitigkeiten aus diesem Vertrag unser Geschäftssitz. Dasselbe gilt, wenn das Mitglied keinen allgemeinen Gerichtsstand in Deutschland hat oder der Wohnsitz oder gewöhnliche Aufenthalt im Zeitpunkt der Klageerhebung nicht bekannt sind.
+            </p>
+        </div>
+    </div>
+    <div style="width: 100%; margin-top: 4em; background-color: #F7EBCE">
+        <div style="padding-bottom: 80px">
+          <div class="md-flex md-items-center" style="padding-left: 20px; padding-top: 48px">
+            <a href="index.html"> <img src="images/employer-advisor/dagmarLogo.svg" alt width="120" class="md-pr-5" style="max-width: 100%; vertical-align: middle; line-height: 1; border: 0"></a>
+            <div class="md-my-0 md-justify-center space-x-3 md-order-2" style="margin-top: 8px; margin-bottom: 8px; display: flex">
+              <a href="https://www.facebook.com/profile.php?id=100087206131802" class="hover-text-gray-500" style="color: #9ca3af">
+                <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border-width: 0">Facebook</span>
+                <img src="images/employer-advisor/Facebook.svg" alt style="max-width: 100%; vertical-align: middle; line-height: 1; border: 0; height: 20px; width: 20px">
+              </a> <a href="https://instagram.com/dagmarverse.de?igshid=OGQ5ZDc2ODk2ZA==" class="hover-text-gray-500" style="color: #9ca3af; --tw-space-x-reverse: 0; margin-right: calc(12px * var(--tw-space-x-reverse)); margin-left: calc(12px * calc(1 - var(--tw-space-x-reverse)));">
+                <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border-width: 0;">Instagram</span>
+                <img src="images/employer-advisor/Instagram - Negative.svg" alt style="max-width: 100%; vertical-align: middle; line-height: 1; border: 0; height: 20px; width: 20px;">
+              </a> <a href="https://www.linkedin.com/company/dagmarverse/" class="hover-text-gray-500" style="color: #9ca3af; --tw-space-x-reverse: 0; margin-right: calc(12px * var(--tw-space-x-reverse)); margin-left: calc(12px * calc(1 - var(--tw-space-x-reverse)));">
+                <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border-width: 0;">Linkedin</span>
+                <img src="images/employer-advisor/LinkedIn - Negative.svg" alt style="max-width: 100%; vertical-align: middle; line-height: 1; border: 0; height: 20px; width: 20px;">
+              </a> <a href="https://open.spotify.com/show/1CUk83ptlOk7APQvaRDqu9?si=as_Bc1uURSWSst01UEsgVA" class="hover-text-gray-500" style="color: #9ca3af; --tw-space-x-reverse: 0; margin-right: calc(12px * var(--tw-space-x-reverse)); margin-left: calc(12px * calc(1 - var(--tw-space-x-reverse)));">
+                <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border-width: 0;">Spotify</span>
+                <img src="images/employer-advisor/Spotify.svg" alt style="max-width: 100%; vertical-align: middle; line-height: 1; border: 0; height: 20px; width: 20px;">
+              </a>
+            </div>
+          </div>
+          <div style="margin-top: 8px; display: flex; flex-wrap: wrap; justify-content: space-between; padding-left: 20px; padding-right: 40px; font-size: 14px">
+            <p style="font-size: 14px; color: #ADA7A7">© 2023 dagmarverse UG</p>
+            <div style="color: #C9195D; text-decoration-line: underline; text-decoration-color: #C9195D">
+              <a href="impressum.html" style="color:#C9195D;">Impressum </a><span>|</span>
+              <a href="datenshutz.html">Datenschutz </a><span>|</span>
+              <a href="agb.html">AGB </a><span>|</span>
+              <a href="widerruf.html">Widerruf</a>
+            </div>
+          </div>
+        </div>
+      </div>
+</div> 
+</body>
+</html> 
+<style>
+    .section {
+        margin-bottom: 3.5rem;
+    }
+
+    .sub-section {
+        margin-bottom: 1rem;
+    }
+
+    span {
+        font-weight: 700;
+        
+    }
+
+    .after-title {
+        margin-top: 1rem;
+    }
+
+    a {
+        text-decoration: underline;
+        /* word-wrap: break-word; */
+        overflow-wrap: break-word;
+        color: #c9195e;
+    }
+</style>
